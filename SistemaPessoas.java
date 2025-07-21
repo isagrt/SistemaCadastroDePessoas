@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class SistemaPessoas {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-       //Pedindo informações ao usuário pessoa
+        // Pedindo informações ao usuário pessoa
         Pessoa pessoa = new Pessoa();
-    
+
         System.out.print("Digite seu nome: ");
         String nome = scanner.nextLine();
         pessoa.setNome(nome);
@@ -16,7 +16,7 @@ public class SistemaPessoas {
 
         System.out.print("Digite sua idade: ");
         int idade = scanner.nextInt();
-        scanner.nextLine(); 
+        scanner.nextLine();
         pessoa.setIdade(idade);
 
         System.out.print("Digite seu CPF: ");
@@ -26,12 +26,12 @@ public class SistemaPessoas {
         System.out.println("Digite sua altura: ");
         Double altura = scanner.nextDouble();
         pessoa.setAltura(altura);
-        
-        pessoa.exibirDados();
 
-        //Pedindo informações ao usuário Aluno
+        scanner.nextLine(); // comando que limpa o buffer prara não ignorar o prompt
+
+        // Pedindo informações ao usuário Aluno
         Aluno aluno = new Aluno();
-    
+        System.out.print(" ");
         System.out.print("Digite seu nome: ");
         nome = scanner.nextLine();
         aluno.setNome(nome);
@@ -42,7 +42,7 @@ public class SistemaPessoas {
 
         System.out.print("Digite sua idade: ");
         idade = scanner.nextInt();
-        scanner.nextLine(); 
+        scanner.nextLine();
         aluno.setIdade(idade);
 
         System.out.print("Digite seu CPF: ");
@@ -50,11 +50,28 @@ public class SistemaPessoas {
         aluno.setCPF(cpf);
 
         System.out.println("Digite sua altura: ");
-         altura = scanner.nextDouble();
+        altura = scanner.nextDouble();
         aluno.setAltura(altura);
-        
-        aluno.exibirDados();
 
+        System.out.print("Digite sua matricula: ");
+        int matricula = scanner.nextInt();
+        scanner.nextLine(); 
+        aluno.setMatricula(matricula);
+
+        System.out.print("Digite o ano que você está matriculado(a): ");
+        int grau = scanner.nextInt();
+        scanner.nextLine(); 
+        aluno.setGrau(grau);
+
+        System.out.print("Digite o nome do responsável pelo aluno: ");
+        String nomeResponsavel = scanner.nextLine();
+        aluno.setNomeResponsavel(nomeResponsavel);
+        ;
+        aluno.setNomeResponsavel(nomeResponsavel);
+
+        pessoa.exibirDados();
+        aluno.exibirDados();
+        
         scanner.close();
     }
 }

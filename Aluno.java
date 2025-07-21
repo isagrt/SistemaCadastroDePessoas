@@ -18,15 +18,18 @@ public class Aluno extends Pessoa {
     public String getNomeResponsavel(){
         return nomeResponsavel;
     }
-    public void setNomeResponsável(String nomeResponsavel){
+    public void setNomeResponsavel(String nomeResponsavel){
         this.nomeResponsavel = nomeResponsavel;
     }
     @Override
     public void exibirDados() {
         System.out.println("\n--- Dados do Aluno  ---");
-        System.out.println("Nome: " + nome + " " + sobrenome);
-        System.out.println("Idade: " + idade);
-        System.out.println("CPF: " + cpf);
-        System.out.println("Altura: " + altura);
+        System.out.println("Nome: " + getNome()+ " " + getSobrenome());
+        System.out.println("Idade: " + getIdade());
+        System.out.println("CPF: " + getCPF());
+        System.out.println("Altura: " + getAltura());
+        System.out.println("Matricula: " +matricula);
+        System.out.println("Grau: " +grau);
+        System.out.println("Nome de pais ou reponsável: " +nomeResponsavel);
     }
 }

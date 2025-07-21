@@ -13,6 +13,13 @@ public class Pessoa {
     private String cpf;
     private Double altura;
 
+    Pessoa(){
+        this.nome = "Sem nome cadastrado";
+        this.sobrenome = "Sem sobrenome cadastrado";
+        this.idade = 0;
+        this.cpf ="Não consta";
+        this.altura = 0.0;
+    }
     public String getNome(){
         return nome;
     }
