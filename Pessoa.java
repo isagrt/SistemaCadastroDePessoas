@@ -50,6 +50,10 @@ public class Pessoa {
     public void setAltura(double altura){
         this.altura = altura;
     }
+
+    public void cadastrar(){
+        System.out.print(" \n ---Insira Dados da Pessoa  ---\n");
+    }
     
     public void exibirDados() {
         System.out.println("\n--- Dados da Pessoa ---");

@@ -22,6 +22,11 @@ public class Professor extends Pessoa{
         this.formacaoAcademica = formacaoAcademica;
     }
     @Override
+    public void cadastrar(){
+                System.out.print(" \n ---Insira Dados do Professor  ---\n");
+    }
+
+    @Override
     public void exibirDados() {
         System.out.println("\n--- Dados do Professor  ---");
         System.out.println("Nome: " + getNome()+ " " + getSobrenome());

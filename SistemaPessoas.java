@@ -5,8 +5,8 @@ public class SistemaPessoas {
         Scanner scanner = new Scanner(System.in);
         // Pedindo informações ao usuário pessoa
         Pessoa pessoa = new Pessoa();
-
-        System.out.print(" \n ---Insira Dados da Pessoa  ---\n");
+        
+        pessoa.cadastrar();
         System.out.print("Digite seu nome: ");
         String nome = scanner.nextLine();
         pessoa.setNome(nome);
@@ -32,7 +32,8 @@ public class SistemaPessoas {
 
         // Pedindo informações ao usuário Aluno
         Aluno aluno = new Aluno();
-        System.out.print(" \n ---Insira Dados do Aluno  ---\n");
+
+        aluno.cadastrar();
         System.out.print("Digite seu nome: ");
         nome = scanner.nextLine();
         aluno.setNome(nome);
@@ -70,7 +71,8 @@ public class SistemaPessoas {
 
         // Pedindo informações ao usuário Professor
         Professor professor = new Professor();
-        System.out.print(" \n ---Insira Dados do Professor  ---\n");
+
+        professor.cadastrar();
         System.out.print("Digite seu nome: ");
         nome = scanner.nextLine();
         professor.setNome(nome);

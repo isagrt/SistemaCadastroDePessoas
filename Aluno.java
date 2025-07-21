@@ -22,6 +22,10 @@ public class Aluno extends Pessoa {
         this.nomeResponsavel = nomeResponsavel;
     }
     @Override
+    public void cadastrar(){
+        System.out.print(" \n ---Insira Dados do Aluno  ---\n");
+    }
+    @Override
     public void exibirDados() {
         System.out.println("\n--- Dados do Aluno  ---");
         System.out.println("Nome: " + getNome()+ " " + getSobrenome());
