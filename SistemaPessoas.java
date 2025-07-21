@@ -19,7 +19,7 @@ public class SistemaPessoas {
         int idade = scanner.nextInt();
         scanner.nextLine();
         pessoa.setIdade(idade);
-
+        
         System.out.print("Digite seu CPF: ");
         String cpf = scanner.nextLine();
         pessoa.setCPF(cpf);
