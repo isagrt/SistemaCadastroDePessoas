@@ -59,12 +59,12 @@ public class SistemaPessoas {
         scanner.nextLine(); 
         aluno.setMatricula(matricula);
 
-        System.out.print("Digite o ano que você está matriculado(a): ");
+        System.out.print("Digite o ano que voce esta matriculado(a): ");
         int grau = scanner.nextInt();
         scanner.nextLine(); 
         aluno.setGrau(grau);
 
-        System.out.print("Digite o nome do responsável pelo aluno: ");
+        System.out.print("Digite o nome do responsavel pelo aluno: ");
         String nomeResponsavel = scanner.nextLine();
         aluno.setNomeResponsavel(nomeResponsavel);
 
@@ -92,22 +92,20 @@ public class SistemaPessoas {
         altura = scanner.nextDouble();
         professor.setAltura(altura);
 
-        System.out.print("Digite seu código de funcionário: ");
+        System.out.print("Digite seu codigo de funcionario: ");
         int codigo = scanner.nextInt();
         scanner.nextLine(); 
         professor.setCodigo(codigo);
 
-        System.out.print("Digite o ano que você leciona: ");
+        System.out.print("Digite o ano que voce leciona: ");
         int anoQueLeciona = scanner.nextInt();
         scanner.nextLine(); 
         professor.setAnoQueLeciona(anoQueLeciona);
 
-        System.out.print("Digite sua formação acadêmica:  ");
+        System.out.print("Digite sua formacao academica:  ");
         String formacaoAcademica = scanner.nextLine();
         professor.setFormacaoAcademica(formacaoAcademica);
         
-
-
         pessoa.exibirDados();
         aluno.exibirDados();
         professor.exibirDados();

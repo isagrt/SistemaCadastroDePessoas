@@ -29,7 +29,7 @@ public class Aluno extends Pessoa {
         System.out.println("CPF: " + getCPF());
         System.out.println("Altura: " + getAltura());
         System.out.println("Matricula: " +matricula);
-        System.out.println("Grau: " +grau);
+        System.out.println("Grau: " +grau+ "° ano");
         System.out.println("Nome de pais ou reponsável: " +nomeResponsavel);
     }
 }

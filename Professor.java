@@ -28,8 +28,8 @@ public class Professor extends Pessoa{
         System.out.println("Idade: " + getIdade());
         System.out.println("CPF: " + getCPF());
         System.out.println("Altura: " + getAltura());
-        System.out.println("Código de funcionário: " +codigo);
-        System.out.println("Ano que leciona: " +anoQueLeciona);
-        System.out.println("Formação acadêmica: " +formacaoAcademica);
+        System.out.println("Codigo de funcionario: " +codigo);
+        System.out.println("Ano que leciona: " +anoQueLeciona+ "° ano");
+        System.out.println("Formacao academica: " +formacaoAcademica);
     }
 }
